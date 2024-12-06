@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labo 10-TP2</title>
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="entete" class="entete">
+    <div class="global hero"> 
+        <label id="burger" for="chk-burger">  
+            <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu-alt-1&color=888" width="32" height="32">
+            </label>
+            <input type="checkbox" name="chk-burger" id="chk-burger">  
+        <nav id="menu">
+            <a href="#entete">Accueil</a>
+            <a href="#section-1">Inscription</a>
+            <a href="#section-2">Tableau</a>
+            <a href="#section-3">Articles</a>
+            <a href="#section-4">Galerie</a>
+            <a href="#section-5">Vidéo</a>
+            <a href="#pied">Pied de page</a>
+        </nav>
+        <section class="hero__ecriture-logo">
+            
+            <div class="hero__texte">
+             <h1>Les meilleurs plages autour du monde</h1>
+              <div class="hero__details">
+               <p>Ce travail individuel consiste à créer un site web monopage composé de plusieurs sectons distinctes, chacune occupant une hauteur minimale or 100vh. Chaque section doit etre navigable a partir d'un menu fixe toujour visible en haut de la page.</p>
+               <p id="Auteur">Auteure: Gracia Marenco</p>
+              </div>
+   
+            </div>           
+            <figure class="hero__figure">
+            <img src="images/marenco_gracia_logo_sans_fond.png" alt="logo">
+        </figure>
+        </section>
+
+<div id="info-pdp"></div>
+</div>
+</header>
+ <!--Inscription-->
+ <section id="section-1">
+    <div class="global">
+        <h2>Inscription</h2>
+        <form class="formulaire">
+            <fieldset>
+                <legend>Inscrivez-vous!</legend>
+                <div>
+                    <label for="nom">Nom</label>
+                    <input id="nom" type="text" placeholder="Entrez votre nom">
+                </div>
+                <div>
+                    <label for="prenom">Prénom</label>
+                    <input id="prenom" type="text" placeholder="Entrez votre prénom">
+                </div>
+                <div>
+                    <label for="courriel">Courriel</label>
+                    <input id="courriel" type="email" placeholder="Entrez votre courriel">
+                </div>
+                <div>
+                    <label for="mot_de_passe">Mot de passe</label>
+                    <input id="mot_de_passe" type="password" placeholder="Entrez votre mot de passe">
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Adresse complète</legend>
+                <div>
+                    <label for="pays">Pays</label>
+                    <input id="pays" type="text" placeholder="Entrez le pays">
+                </div>
+                <div>
+                    <label for="province">Province</label>
+                    <input id="province" type="text" placeholder="Entrez la province">
+                </div>
+                <div>
+                    <label for="rue">Rue</label>
+                    <input id="rue" type="text" placeholder="Entrez votre adresse civique">
+                </div>
+            </fieldset>
+            <div>
+                <button type="submit">Envoyer</button>
+            </div>
+        </form>
+    </div>
+</section>
+     <!--Tableau-->
+    <section id="section-2">
+        <div class="global">
+            <h2>Tableau</h2>
+            <table>
+                <caption>Horaire automne 2024</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th>Mercredi</th>
+                        <th>Jeudi</th>
+                        <th>Vendredi</th>
+                    </tr>
+                </thead>
+                <!-- 8h  -->   
+                <tr>
+                   <th>8h</th>
+                   <td class="m-1w1" rowspan="2"><h2 class="diagonal">1W1</h2></td>
+                   <td></td>
+                   <td rowspan="1"></td>
+                   <td rowspan="2"></td>
+                   <td class="m-1m1" rowspan="3"><h2 class="diagonal">1M1</h2></td>
+                </tr> 
+                <!-- 9h  -->   
+                <tr>
+                    <th>9h</th>
+                    <td class="m-1w1" rowspan="3"><h2 class="diagonal">1W1</h2></td>
+                    <td class="eng" rowspan="3"><h2 class="diagonal">ANGLAIS</h2></td>
+                </tr>
+                 <!-- 10h  -->  
+                <tr>
+                    <th>10h</th>
+                    <td class="m-1m1" rowspan="2"><h2 class="diagonal">1M1</h2></td>
+                    <td class="muscu" rowspan="3"><h2 class="diagonal">MUSCU</h2></td>
+                </tr>
+                 <!-- 11h  -->  
+                <tr>
+                    <th>11h</th>
+                    <td class="libre" rowspan="3"><h2 class="vertical">LIBRE</h2></td>
+                </tr>
+                 <!-- 12h  -->  
+                <tr>
+                    <th>12h</th>
+                    <td class="libre" rowspan="6"><h2 class="vertical">LIBRE</h2></td>
+                    <td class="libre" rowspan="6"><h2 class="vertical">LIBRE</h2></td>
+                    <td class="libre" rowspan="6"><h2 class="vertical">LIBRE</h2></td>
+                </tr>
+                 <!-- 13h  -->  
+                <tr>
+                    <th>13h</th>
+                    <td class="libre" rowspan="2"><h2>LIBRE</h2></td>
+                </tr>
+                 <!-- 14h  -->  
+                <tr>
+                    <th>14h</th>
+                    <td class="m-1m2" rowspan="4"><h2 class="diagonal">1M2</h2></td>
+                </tr>
+                 <!-- 15h  -->  
+                <tr>
+                    <th>15h</th>
+                    <td class="m-1m2" rowspan="3"><h2 class="diagonal">1M2</h2></td>
+                </tr>
+                 <!-- 16h  -->  
+                <tr>
+                    <th>16h</th>
+                    </td>
+                </tr>
+                 <!-- 17h  -->  
+                <tr>
+                    <th>17h</th>
+                </tr>
+            </table>
+        </section>
+        </div>
+        <section id="section-3">
+            <div class="global">
+                <h2>Articles</h2>
+                <article class="article">
+                    <figure class="article__figure">
+                        <img class="taille" src="images/el tunco.jpg" alt="El Tunco">
+                        <figcaption>Plage El Tunco</figcaption>
+                    </figure>
+                    <div class="article__p">
+                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iure tenetur esse alias consequuntur dolores sint commodi fuga aliquam, beatae quod, officia quia ducimus, consequatur quisquam quibusdam deserunt aspernatur quas.</p>
+                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iure tenetur esse alias consequuntur dolores sint commodi fuga aliquam, beatae quod, officia quia ducimus, consequatur quisquam quibusdam deserunt aspernatur quas.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <figure class="article__figure">
+                        <img class="taille" src="images/el tunco.jpg" alt="El Tunco">
+                        <figcaption>Plage El Tunco</figcaption>
+                    </figure>
+                    <div class="article__p">
+                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iure tenetur esse alias consequuntur dolores sint commodi fuga aliquam, beatae quod, officia quia ducimus, consequatur quisquam quibusdam deserunt aspernatur quas.</p>
+                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iure tenetur esse alias consequuntur dolores sint commodi fuga aliquam, beatae quod, officia quia ducimus, consequatur quisquam quibusdam deserunt aspernatur quas.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <figure class="article__figure">
+                        <img class="taille" src="images/el tunco.jpg" alt="El Tunco">
+                        <figcaption>Plage El Tunco</figcaption>
+                    </figure>
+                    <div class="article__p">
+                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iure tenetur esse alias consequuntur dolores sint commodi fuga aliquam, beatae quod, officia quia ducimus, consequatur quisquam quibusdam deserunt aspernatur quas.</p>
+                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iure tenetur esse alias consequuntur dolores sint commodi fuga aliquam, beatae quod, officia quia ducimus, consequatur quisquam quibusdam deserunt aspernatur quas.</p>
+                    </div>
+                    
+                </article>
+                <article class="article">
+                    <figure class="article__figure">
+                        <img class="taille" src="images/el tunco.jpg" alt="El Tunco">
+                        <figcaption>Plage El Tunco</figcaption>
+                    </figure>
+                    <div class="article__p">
+                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iure tenetur esse alias consequuntur dolores sint commodi fuga aliquam, beatae quod, officia quia ducimus, consequatur quisquam quibusdam deserunt aspernatur quas.</p>
+                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iure tenetur esse alias consequuntur dolores sint commodi fuga aliquam, beatae quod, officia quia ducimus, consequatur quisquam quibusdam deserunt aspernatur quas.</p>
+                    </div>
+                    
+                </article>
+                <article class="article">
+                    <figure class="article__figure">
+                        <img class="taille" src="images/el tunco.jpg" alt="El Tunco">
+                        <figcaption>Plage El Tunco</figcaption>
+                    </figure>
+                    <div class="article__p">
+                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iure tenetur esse alias consequuntur dolores sint commodi fuga aliquam, beatae quod, officia quia ducimus, consequatur quisquam quibusdam deserunt aspernatur quas.</p>
+                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iure tenetur esse alias consequuntur dolores sint commodi fuga aliquam, beatae quod, officia quia ducimus, consequatur quisquam quibusdam deserunt aspernatur quas.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+     <!--Galerie-->
+    <section id="section-4">
+        <div class="global">
+            <h2>Galerie</h2>
+                <figure class="article__figure">
+                    <img class="size" src="images/whitehaven_australia.jpg" alt="Whitehaven, Australie">
+                    <figcaption>Whitehaven, Australie</figcaption>
+                </figure>
+                <figure class="article__figure">
+                    <img class="size" src="images/Tulum.jpg" alt="Tulum, Mexico">
+                    <figcaption>Tulum, Mexico</figcaption>
+                </figure>
+                <figure class="article__figure">
+                    <img class="size" src="images/plage el tunco.jpg" alt="El Tunco, El Salvador">
+                    <figcaption>El Tunco, El Salvador</figcaption>
+                </figure>
+                <figure class="article__figure">
+                    <img class="size" src="images/Bahia de Las Aguilas à Barahona.jpg" alt="Bahia de Las Aguilas, Barahona, République Dominicaine">
+                    <figcaption>Bahia de Las Aguilas, République Dominicaine</figcaption>
+                </figure>
+                <figure class="article__figure">
+                    <img class="size" src="images/Nosy Iranja-Madagascar.jpg" alt="Nosy Iranja, Madagascar">
+                    <figcaption>Nosy Iranja, Madagascar</figcaption>
+                </figure>
+                <figure class="article__figure">
+                    <img class="size" src="images/Pink Sands aux Bahamas.jpg" alt="Plage de sable rose, Bahamas">
+                    <figcaption>Plage de sable rose, Bahamas</figcaption>
+                </figure>
+                <figure class="article__figure">
+                    <img class="size" src="images/PLAGE DE MYRTOS (CÉFALONIE, GRÈCE).jpg" alt="Plage de Myrtos, Grèce">
+                    <figcaption>Plage de Myrtos, Grèce</figcaption>
+                </figure>
+                <figure class="article__figure">
+                    <img class="size" src="images/La Digue, Seychelles.jpg" alt="La Digue, Seychelles">
+                    <figcaption>La Digue, Seychelles</figcaption>
+                </figure>
+                <figure class="article__figure">
+                    <img class="size" src="images/Bora Bora (Tahiti, République française).jpg" alt="Bora Bora, Tahiti">
+                    <figcaption>Bora Bora, Tahiti</figcaption>
+                </figure>
+                <figure class="article__figure">
+                    <img class="size" src="images/KA'ANAPALI BEACH (LAHAINA, MAUI, HAWÁI).jpg" alt="Ka'anapali, Hawai">
+                    <figcaption>Ka'anapali, Hawai</figcaption>
+                </figure>
+        </div>
+    </section>
+     <!--Video-->
+    <section id="section-5">
+        <div class="global">
+            <h2>Vidéo</h2>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/0ANLBX2EgmM?si=zNBOIlsFbkNfNiPk" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/ZuyJiNxzgIg?si=1JMFSDobTS8bhsAp" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/4ECd2nJsDcU?si=BRms-dqiOQINIB_Y" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/MbQq4Aizm3E?si=diPraJSslBD4d3vI" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        
+    </section>
+      <!--Footer/pied de page-->
+        <footer id="pied"  class="pied">
+            <section class="global">
+              <div>
+                <h2>Pied de page</h2>
+                <ul>
+                  <li>234 Sherbrooke, Montréal, Québec, Canada</li>
+                  <li>info@cmaisonneuve.qc.Canada</li>
+                  <li>514-123-4567</li>
+                </ul>
+              </div>
+              <div class="liens">
+                <h2>Liens</h2>
+                <ul>
+                  <li><a href="#">premier</a></li>
+                  <li><a href="#">deuxième</a></li>
+                  <li><a href="#">troisième</a></li>
+                  <li><a href="#">quatrième</a></li>
+                  <li><a href="#">cinquième</a></li>
+                  <li><a href="#">sixième</a></li>
+                  <li><a href="#">septième</a></li>
+                  <li><a href="#">quatorzième</a></li>
+                </ul>
+              </div>
+              <div>
+                <h2>Description du département</h2>
+                <ul>
+                 <p>cette departement est .....</p>
+              </div>
+               <!--medias sociaux-->
+          <div class="reseaux-sociaux">
+            <h2>Médias sociaux</h2>
+            <figure>
+                <img src="images/facebook_32.png" alt="facebook" />
+                <img src="images/instagram_32.png" alt="instagram" />
+                <img src="images/youtube_32.png" alt="youtube" />
+            </figure>
+        </div>
+              <div>
+                <ol>Avis de confidentialité | Privacy Notice</ol>
+              </div>
+           </section>
+    </footer>
+</body>
+</html>
